@@ -6,7 +6,7 @@ public class Animal {
     private float weightInKg;
     private boolean laysEggs;
 
-    Animal(final String noise, final float weightInKg, final boolean laysEggs) {
+    public Animal(final String noise, final float weightInKg, final boolean laysEggs) {
         this.noise = noise;
         this.weightInKg = weightInKg;
         this.laysEggs = laysEggs;
@@ -21,13 +21,11 @@ public class Animal {
     }
 
     public void laysEggs() {
-        System.out.println("This " + this.getClass().getSimpleName() + " lays " + getYesOrNo(laysEggs) + "eggs");
+        System.out.println("This " + this.getClass().getSimpleName() + doesOrDoesNot(laysEggs) + " lay eggs.");
     }
 
-    private String getYesOrNo(boolean shouldDisplayYes) {
-        if (shouldDisplayYes) {
-            return "yes";
-        }
-        return "no";
+    private String doesOrDoesNot(boolean shouldPrintYes) {
+        return shouldPrintYes ? "does" : "does not";
     }
+    
 }
