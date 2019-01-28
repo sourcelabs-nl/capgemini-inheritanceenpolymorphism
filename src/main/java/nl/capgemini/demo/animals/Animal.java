@@ -6,7 +6,7 @@ public class Animal {
     private float weightInKg;
     private boolean laysEggs;
 
-    Animal(final String noise, final float weightInKg, final boolean laysEggs) {
+    public Animal(String noise, float weightInKg, boolean laysEggs) {
         this.noise = noise;
         this.weightInKg = weightInKg;
         this.laysEggs = laysEggs;

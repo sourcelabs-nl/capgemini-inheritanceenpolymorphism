@@ -2,7 +2,7 @@ package nl.capgemini.demo.animals;
 
 public class Dog extends Mammal {
 
-    Dog(final float weightInKg, final boolean laysEggs) {
+    public Dog(float weightInKg, boolean laysEggs) {
         super("Woof", weightInKg, laysEggs);
     }
 }
