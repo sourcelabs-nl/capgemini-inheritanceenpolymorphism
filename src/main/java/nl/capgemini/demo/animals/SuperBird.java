@@ -4,7 +4,7 @@ public class SuperBird extends Animal {
 
     private static final String BIRD_SOUND = "tjilp";
 
-    public SuperBird(final float weightInKg) {
+    public SuperBird(float weightInKg) {
         super(BIRD_SOUND, weightInKg, true);
     }
 
